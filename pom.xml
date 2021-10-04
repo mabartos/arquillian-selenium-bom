@@ -4,7 +4,7 @@
 
   <groupId>org.jboss.arquillian.selenium</groupId>
   <artifactId>selenium-bom</artifactId>
-  <version>3.13.0</version>
+  <version>4.0.0-rc-2</version>
   <packaging>pom</packaging>
 
   <name>Arquillian Selenium Dependency Management</name>
@@ -35,6 +35,7 @@
 
   <properties>
     <version.selenium>${project.version}</version.selenium>
+    <version.selenium.server>4.0.0-alpha-2</version.selenium.server>
     <bintray.releases.repo.url>https://api.bintray.com/maven/arquillian/Arquillian/arquillian-selenium-bom/
     </bintray.releases.repo.url>
     <jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/
@@ -47,7 +48,7 @@
       <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-server</artifactId>
-        <version>${version.selenium}</version>
+        <version>${version.selenium.server}</version>
       </dependency>
 
       <!-- Selenium dependecies -->
